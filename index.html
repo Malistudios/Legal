@@ -4,60 +4,178 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="all">
-<title>Datenschutzerklärung & Impressum — Guard the Egg</title>
+<title>Impressum & Datenschutz — Mali Studios</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%89%3C/text%3E%3C/svg%3E">
 <style>
-  :root { color-scheme: light dark; }
-  body { max-width: 760px; margin: 0 auto; padding: 24px 18px 80px; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-  h1 { font-size: 1.7rem; margin-top: 1.6em; }
-  h2 { font-size: 1.25rem; margin-top: 1.8em; border-bottom: 1px solid #8884; padding-bottom: .2em; }
-  h3 { font-size: 1.05rem; margin-top: 1.4em; }
-  code { background: #8882; padding: 0 .3em; border-radius: 3px; }
-  a { color: #2a7ae2; }
-  .mark { background: #ffd54f55; padding: 0 .2em; border-radius: 3px; font-weight: 600; }
-  .updated { color: #8888; font-size: .9rem; }
-  ul { margin: .4em 0; }
+  :root {
+    --bg: #18100A;
+    --card: #221610;
+    --card-edge: #3a2818;
+    --text: #e6d9c3;
+    --muted: #a08a6e;
+    --amber: #f0a832;
+    --amber-soft: #e8a54a;
+    --fire: #e2703a;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    background-image: radial-gradient(ellipse 90% 40% at 50% -5%, #2e1c0e 0%, transparent 60%);
+    color: var(--text);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 18px 90px; }
+
+  header { text-align: center; padding: 52px 0 8px; }
+  .brand {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .42em;
+    text-indent: .42em;
+    color: var(--amber);
+    text-transform: uppercase;
+  }
+  .brand-egg { display: block; font-size: 40px; margin-bottom: 10px; filter: drop-shadow(0 0 14px #f0a83255); }
+  header h1 {
+    margin: 10px 0 4px;
+    font-size: 1.9rem;
+    line-height: 1.25;
+    color: #f4e8d0;
+  }
+  .tagline { margin: 0; color: var(--muted); font-size: .95rem; }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 26px 0 34px;
+  }
+  nav a {
+    color: var(--amber-soft);
+    text-decoration: none;
+    font-size: .9rem;
+    padding: 8px 16px;
+    border: 1px solid var(--card-edge);
+    border-radius: 999px;
+    background: #1e1409;
+    transition: border-color .15s, color .15s;
+  }
+  nav a:hover { border-color: var(--amber); color: var(--amber); }
+
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--card-edge);
+    border-radius: 14px;
+    padding: 28px 26px 22px;
+    margin-bottom: 26px;
+    scroll-margin-top: 20px;
+  }
+  section.card > h2:first-child {
+    margin: 0 0 .8em;
+    padding-bottom: .45em;
+    border-bottom: 1px solid var(--card-edge);
+    font-size: 1.45rem;
+    color: var(--amber);
+  }
+  h3 { font-size: 1.08rem; margin: 1.7em 0 .4em; color: #f4e8d0; }
+  h3::before { content: "◆ "; color: var(--fire); font-size: .8em; }
+  p { margin: .7em 0; }
+  ul { margin: .4em 0 .8em; padding-left: 1.3em; }
+  li { margin: .25em 0; }
+  li::marker { color: var(--fire); }
+  a { color: var(--amber-soft); }
+  code {
+    background: #00000044;
+    border: 1px solid var(--card-edge);
+    padding: 0 .35em;
+    border-radius: 4px;
+    font-size: .92em;
+  }
+  strong { color: #f4e8d0; }
+  .mark { background: #f0a83226; outline: 1px dashed #f0a83266; padding: 0 .25em; border-radius: 4px; font-weight: 600; }
+  .updated { color: var(--muted); font-size: .88rem; margin-top: -.3em; }
+  .imprint-block {
+    background: #00000030;
+    border-left: 3px solid var(--amber);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    margin: 14px 0;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: .85rem;
+    margin-top: 46px;
+  }
+  footer .sep { margin: 0 .5em; color: var(--card-edge); }
+  @media (max-width: 480px) {
+    section.card { padding: 20px 16px 16px; }
+    header { padding-top: 36px; }
+  }
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<p><a href="en.html">English version</a></p>
+<header>
+  <span class="brand-egg">🐉</span>
+  <div class="brand">Mali Studios</div>
+  <h1>Impressum &amp; Datenschutzerklärung</h1>
+  <p class="tagline">für das Spiel „Guard the Egg" (Android &amp; iOS)</p>
+</header>
 
-<h1>Impressum</h1>
+<nav>
+  <a href="#impressum">Impressum</a>
+  <a href="#datenschutz">Datenschutzerklärung</a>
+  <a href="en.html">English version</a>
+</nav>
+
+<section class="card" id="impressum">
+<h2>Impressum</h2>
 <p>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):</p>
-<p>
-  <span class="mark">〈VORNAME NACHNAME〉</span><br>
-  <span class="mark">〈STRASSE HAUSNUMMER〉</span><br>
-  <span class="mark">〈PLZ ORT〉</span><br>
-  Deutschland
-</p>
+<div class="imprint-block">
+  <p>
+    <span class="mark">〈VORNAME NACHNAME〉</span><br>
+    <span class="mark">〈STRASSE HAUSNUMMER〉</span><br>
+    <span class="mark">〈PLZ ORT〉</span><br>
+    Deutschland
+  </p>
+</div>
+<p>„<strong>Mali Studios</strong>" ist der Entwickler- und Markenname, unter dem die oben
+genannte Person auftritt; es handelt sich nicht um eine eigenständige juristische Person.</p>
 <p><strong>Kontakt:</strong><br>
   E-Mail: <span class="mark">〈KONTAKT-E-MAIL〉</span>
 </p>
 <p><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong><br>
   wie oben.</p>
+</section>
 
-<h1>Datenschutzerklärung</h1>
+<section class="card" id="datenschutz">
+<h2>Datenschutzerklärung</h2>
 <p class="updated">Stand: <span class="mark">〈MONAT JAHR〉</span></p>
 
-<h2>1. Verantwortlicher</h2>
+<h3>1. Verantwortlicher</h3>
 <p>Verantwortlich für die Datenverarbeitung im Zusammenhang mit der App und dem Spiel
 „Guard the Egg" ist die im Impressum genannte Person. Kontakt für Datenschutzanfragen:
 <span class="mark">〈KONTAKT-E-MAIL〉</span>.</p>
 
-<h2>2. Überblick</h2>
+<h3>2. Überblick</h3>
 <p>„Guard the Egg" ist ein Idle-/Tower-Defense-Spiel für Android und iOS. Wir verarbeiten
 personenbezogene Daten nur, soweit dies für den Betrieb des Spiels erforderlich ist. Die
 Nutzung ist grundsätzlich auch ohne Benutzerkonto möglich; der Spielstand wird dann nur
 lokal auf deinem Gerät gespeichert.</p>
 
-<h2>3. Lokale Speicherung auf dem Gerät</h2>
+<h3>3. Lokale Speicherung auf dem Gerät</h3>
 <p>Zur Speicherung deines Spielfortschritts und deiner Einstellungen nutzt das Spiel den
 lokalen Speicher deines Geräts bzw. Browsers (<code>localStorage</code>). Diese Daten
 verbleiben auf deinem Gerät und werden nicht an uns übertragen, solange du kein Konto
 anlegst und die Cloud-Speicherung nicht nutzt. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO
 (Bereitstellung der von dir angeforderten Spielfunktion).</p>
 
-<h2>4. Werbung: Google AdMob</h2>
+<h3>4. Werbung: Google AdMob</h3>
 <p>In der mobilen App zeigen wir <strong>freiwillige, belohnte Werbevideos („Rewarded Ads")</strong>
 über den Dienst <strong>Google AdMob</strong> (Google Ireland Limited, Gordon House, Barrow
 Street, Dublin 4, Irland; bzw. Google LLC, USA). Werbung wird nur ausgespielt, wenn du sie
@@ -76,7 +194,7 @@ Abs. 1 TDDDG. Du kannst deine Einwilligung jederzeit in den Einstellungen widerr
 personalisierte Tracking deaktivieren. Weitere Informationen:
 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>.</p>
 
-<h2>5. Benutzerkonto, Cloud-Speicherung & Bestenliste (Supabase)</h2>
+<h3>5. Benutzerkonto, Cloud-Speicherung &amp; Bestenliste (Supabase)</h3>
 <p>Wenn du ein Konto anlegst, um deinen Spielstand geräteübergreifend zu speichern (Cloud-Save)
 oder an der Bestenliste teilzunehmen, verarbeiten wir die dafür nötigen Daten über unseren
 Backend-Dienst <strong>Supabase</strong> (Supabase Inc.). Die Daten werden in der Region
@@ -96,7 +214,7 @@ Backend-Dienst <strong>Supabase</strong> (Supabase Inc.). Die Daten werden in de
 lit. f DSGVO (berechtigtes Interesse an einer fairen Bestenliste und Missbrauchsvermeidung).
 Die Nutzung des Kontos ist freiwillig.</p>
 
-<h2>6. Bereitstellung / Hosting</h2>
+<h3>6. Bereitstellung / Hosting</h3>
 <p>Diese Seite wird bereitgestellt über <strong>GitHub Pages</strong> (GitHub, Inc.,
 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Das Spiel selbst wird über
 den <strong>Google Play Store</strong> (Google Ireland Limited) bzw. den <strong>Apple
@@ -105,12 +223,12 @@ Bezug über die Stores gelten ergänzend die Datenschutzhinweise von Google bzw.
 Beim Aufruf werden technisch notwendige Zugriffsdaten (z. B. IP-Adresse, Zeitpunkt, abgerufene
 Datei) verarbeitet. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.</p>
 
-<h2>7. Speicherdauer</h2>
+<h3>7. Speicherdauer</h3>
 <p>Wir speichern personenbezogene Daten nur so lange, wie es für die genannten Zwecke
 erforderlich ist. Konto- und Spielstanddaten werden gelöscht, wenn du dein Konto bzw.
 deinen Spielstand löschst (Funktion in den Einstellungen) oder eine Löschung anforderst.</p>
 
-<h2>8. Deine Rechte</h2>
+<h3>8. Deine Rechte</h3>
 <p>Du hast nach der DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung
 (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und
 Widerspruch (Art. 21). Erteilte Einwilligungen kannst du jederzeit mit Wirkung für die
@@ -118,13 +236,19 @@ Zukunft widerrufen. Wende dich dazu an <span class="mark">〈KONTAKT-E-MAIL〉</
 <p>Zudem hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren
 (Art. 77 DSGVO), z. B. bei der für deinen Wohnsitz zuständigen Landesbehörde.</p>
 
-<h2>9. Kinder</h2>
+<h3>9. Kinder</h3>
 <p>Das Spiel richtet sich nicht gezielt an Kinder unter 16 Jahren. Wir erheben nicht wissentlich
 personenbezogene Daten von Kindern ohne Einwilligung der Erziehungsberechtigten.</p>
 
-<h2>10. Änderungen</h2>
+<h3>10. Änderungen</h3>
 <p>Wir passen diese Datenschutzerklärung an, wenn sich die Datenverarbeitung ändert. Es gilt
 die jeweils auf dieser Seite veröffentlichte Fassung.</p>
+</section>
 
+<footer>
+  🥚 <strong>Mali Studios</strong><span class="sep">·</span>Guard the Egg<span class="sep">·</span><a href="en.html">English</a>
+</footer>
+
+</div>
 </body>
 </html>
